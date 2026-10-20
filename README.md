@@ -1,56 +1,49 @@
 Bejjam Charan Sai Teja
-AI/ML Developer | Generative AI Engineer | LLM Applications | Full-Stack Software Development
+AI/ML Developer | Generative AI | LLM Applications | Full-Stack Development
 
-Building intelligent applications with Generative AI, large language models, persistent memory, and modern software engineering.
+Building practical AI-powered applications with large language models, persistent memory, Python, and modern web technologies.
 
-I am Bejjam Charan Sai Teja, an Artificial Intelligence and Machine Learning undergraduate based in Telangana, India. I focus on developing practical AI-powered applications, integrating large language models, and building reliable full-stack software solutions.
+I'm an Artificial Intelligence and Machine Learning undergraduate based in Telangana, India, interested in turning AI capabilities into reliable, real-world software.
 
-My interests include Generative AI, LLM engineering, AI agents, backend development, full-stack architecture, and cybersecurity. I enjoy combining locally hosted language models, conversational memory, REST APIs, and modern web technologies to create useful, maintainable applications.
+My focus areas include Generative AI, LLM engineering, Python backend development, full-stack applications, and cybersecurity.
 
-🔭 Currently focused on: Generative AI, LLM applications, and full-stack development
-🤖 AI stack: Ollama, Qwen3 8B, Hindsight
-🛠️ Backend: Python, FastAPI, SQLite, SQLAlchemy
+🤖 AI & LLMs: Ollama, Qwen3 8B, Hindsight
+⚙️ Backend: Python, FastAPI, REST APIs, SQLite, SQLAlchemy
 🌐 Frontend: React, Vite
-🔐 Additional interests: Cybersecurity, network security, and secure software engineering
-🧰 Technical Skills
-Programming Languages
+🧪 Engineering: Pytest, Docker, GitHub Actions, Ruff, Mypy
+🔐 Security: Linux, OSINT, network inspection, vulnerability assessment
+🛠️ Technical Skills
+
+Languages
 
 !Python !Java !C !SQL
 
-AI, Generative AI & LLM Engineering
+AI & Generative AI
 
 !Ollama !Generative AI !LLM Applications
 
-Large language model integration and application development
-Local inference with Ollama and Qwen3 8B
-Persistent conversational memory using Hindsight
+LLM integration and application development
+Local inference using Ollama and Qwen3 8B
+Persistent conversational memory with Hindsight
 Prompt engineering and context-aware AI workflows
-AI agents and LLM-powered application architecture
-Backend & Database Development
+AI agent concepts and LLM application architecture
 
-!FastAPI !SQLite !SQLAlchemy
+Backend, Frontend & Databases
 
-REST API design and development
-Backend application architecture
-Database persistence and ORM integration
-Request validation and exception handling
-Frontend Development
+!FastAPI !React !Vite !SQLite !SQLAlchemy
 
-!React !Vite
+REST API design and integration
+Database persistence and ORM-based data access
+Frontend and backend integration
+Request validation and error handling
 
-Component-based user interfaces
-Frontend and backend API integration
-Application state and error handling
-Development Tools & Quality Engineering
+Development & Quality Engineering
 
-!Git !GitHub Actions !Docker !Pytest
+!Git !Docker !Pytest !GitHub Actions
 
-Automated testing with Pytest
-Code quality and linting with Ruff
-Static type checking with Mypy
-Containerization with Docker
-Continuous integration with GitHub Actions
-Cybersecurity & Network Analysis
+Ruff · Mypy · Automated testing · Continuous integration · Containerization
+
+Cybersecurity
 
 Linux · Kali Linux · OSINT · Nmap · Wireshark · Burp Suite · Metasploit
 
@@ -59,82 +52,70 @@ Areas of interest include network security, security testing, vulnerability asse
 🚀 Featured Projects
 1. AI Customer Support Agent with Long-Term Memory
 
-A full-stack AI customer support application designed to maintain conversational continuity using locally hosted LLMs and persistent memory.
-
-The application combines a React frontend, FastAPI backend, local language model inference, and a persistent memory layer to generate responses informed by relevant historical interactions.
+A full-stack AI customer support application designed to maintain conversational continuity through locally hosted language models and persistent memory.
 
 Technology stack
 
 Python FastAPI React Vite Ollama Qwen3 8B Hindsight SQLite SQLAlchemy Pytest
 
-Key Features
+Key features
 
-🧠 Persistent conversational memory: Integrates Hindsight to retain and retrieve relevant information from previous interactions.
-🤖 Context-aware responses: Uses historical conversational context to inform responses.
-🖥️ Local AI inference: Runs Qwen3 8B through Ollama.
-🔌 Backend API integration: Connects frontend interactions with backend application logic.
+🧠 Persistent memory: Integrates Hindsight to retain and retrieve relevant information from previous interactions.
+💬 Context-aware responses: Uses relevant conversational history to inform responses.
+🤖 Local LLM inference: Integrates Qwen3 8B through Ollama.
+🔌 Full-stack integration: Connects the frontend, backend APIs, model inference, and data storage.
 📎 Attachment processing: Supports attachment parsing and database persistence.
-🧪 Testing and error handling: Includes frontend error-handling mechanisms and automated backend tests.
+🧪 Testing and error handling: Includes frontend error-handling mechanisms and backend tests.
 
-Engineering focus: LLM integration, memory retrieval, API design, persistent storage, and full-stack application development.
+Engineering focus: LLM integration, memory retrieval, API architecture, data persistence, and full-stack development.
 
-Project repository: Add the direct URL to your AI Customer Support Agent repository here.
-
+Project link: Add the URL of your public AI Customer Support Agent repository here.
 2. SentinelNet — Network Security Inspection Framework
 
-A Python-based framework for network security inspection and target analysis, emphasizing asynchronous execution, structured validation, and development quality.
+A Python-based framework for network security inspection and target analysis, emphasizing asynchronous processing, structured validation, and software quality.
 
 Technology stack
 
 Python AsyncIO Pydantic Docker Pytest Ruff Mypy GitHub Actions
 
-Key Features
+Key features
 
-⚡ Asynchronous processing using Python AsyncIO
+⚡ Asynchronous processing with Python AsyncIO
 ✅ Structured input validation using Pydantic
-🐳 Containerized development using Docker
+🐳 Containerized workflows using Docker
 🧪 Automated testing with Pytest
-🔍 Code linting and static type checking
-⚙️ Continuous integration and automated quality checks
+🔍 Linting and static type checking
+⚙️ Continuous integration and code-quality automation
 
-Engineering focus: Python engineering, input validation, asynchronous processing, testing, and maintainable software architecture.
-
-Project repository: Add the direct URL to your SentinelNet repository here.
+Engineering focus: Python engineering, asynchronous processing, validation, testing, and maintainable software architecture.
 
 🎓 Education
 
-Bachelor of Technology (B.Tech.) — Artificial Intelligence and Machine Learning
+B.Tech. in Artificial Intelligence and Machine Learning
 
 Sri Indu College of Engineering & Technology
 Hyderabad, Telangana, India
 
-Academic interests: Machine learning, data structures, database management systems, operating systems, computer networks, and software engineering.
+Academic interests include machine learning, data structures, database management systems, operating systems, computer networks, and software engineering.
 
 📜 Certifications & Professional Development
-Microsoft: Unlocking AI for Everyone
-Tata / Forage: GenAI Powered Data Analytics Job Simulation
-Tata / Forage: Cybersecurity Analyst Job Simulation
-Infosys Springboard: Introduction to Cyber Security
-Infosys Springboard: Prompt Engineering
-
-Professional development interests include Generative AI, prompt engineering, cybersecurity assessment, identity and access management, and data analytics.
-
+Microsoft — Unlocking AI for Everyone
+Tata / Forage — GenAI Powered Data Analytics Job Simulation
+Tata / Forage — Cybersecurity Analyst Job Simulation
+Infosys Springboard — Introduction to Cyber Security
+Infosys Springboard — Prompt Engineering
 🎯 Professional Interests
-Artificial Intelligence Engineering
-Generative AI and LLM application development
-AI agents and Agentic AI
-Conversational memory and context-aware systems
-Python and backend engineering
-Full-stack software development
-Cybersecurity and secure application design
+
+Generative AI · LLM Engineering · AI Agents · Agentic AI · Python Development · Full-Stack Engineering · Cybersecurity
+
 🤝 Connect With Me
 GitHub: charansaiteja-cloud
-LinkedIn: www.linkedin.com/in/bejjam-charan-sai-teja-
+LinkedIn: Bejjam Charan Sai Teja
 Email: 25d41a6633@sriindu.ac.in
-💡 Career Objective
+💡 Professional Goal
 
-I aim to build practical software solutions that bridge Generative AI and real-world engineering. I am particularly interested in developing reliable LLM-powered applications that combine intelligent language models, contextual memory, robust APIs, and intuitive user experiences.
+I aim to build useful AI-powered software that combines intelligent language models, contextual memory, reliable backend infrastructure, and intuitive user experiences.
 
-I am continuously expanding my skills in AI engineering, Generative AI, LLM systems, and full-stack development, with an emphasis on clean architecture, testing, and responsible software development.
+I'm continuously developing my skills in AI engineering, Generative AI, LLM applications, and full-stack software development, with an emphasis on maintainable code, testing, and responsible engineering.
 
-This profile highlights my technical interests, learning journey, and software projects. Please refer to the linked repositories for implementation details and current project status.
+Explore my repositories to follow my projects, review implementations, and learn about the technologies I work with.
