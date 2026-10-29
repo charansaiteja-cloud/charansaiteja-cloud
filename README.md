@@ -28,7 +28,7 @@ systems, Python services, and security tooling.
 
 | Project | Description | Verification |
 | --- | --- | --- |
-| [**AI Customer Support Agent**](https://github.com/charansaiteja-cloud/AI-AGENT) | Full-stack support agent with Qwen3 via Ollama, per-customer long-term memory in Hindsight, optional API-key auth, attachments, and a React UI. | 121 backend + 17 frontend tests · 85.2% backend coverage · Ruff, Mypy, CI |
+| [**AI Customer Support Agent**](https://github.com/charansaiteja-cloud/AI-AGENT) | Full-stack support agent with Qwen3 via Ollama, per-customer long-term memory in Hindsight, optional API-key auth, attachments, and a React UI. | 121 backend + 17 frontend tests · 84.9% backend coverage · Ruff, Mypy, CI |
 | [**SentinelNet**](https://github.com/charansaiteja-cloud/SentinelNet) | ML-assisted network anomaly detector. Learns a baseline with Isolation Forest, scores live or replayed traffic, applies risky-port rules, and emits JSONL alerts with cooldown. | 48 tests · 91% branch coverage · Ruff, Mypy, Bandit · Docker image |
 | [**Secure Code Review**](https://github.com/charansaiteja-cloud/CodeAlpha_SecureCodeReview) | FastAPI reference service that orchestrates Bandit and Semgrep, normalises findings, and demonstrates defensive middleware and parameterised SQL. | 74 tests · 82.8% branch coverage · Ruff and Bandit clean · Python 3.11/3.12 CI |
 | [**Basic Network Sniffer**](https://github.com/charansaiteja-cloud/CodeAlpha_BasicNetworkSniffer) | Metadata-first Scapy sniffer with protocol decoding, CSV export, BPF filtering, and a bounded ICMP preview. | 18 tests · Ruff clean · Python 3.9–3.12 CI |
