@@ -1,121 +1,90 @@
-Bejjam Charan Sai Teja
-AI/ML Developer | Generative AI | LLM Applications | Full-Stack Development
+# Bejjam Charan Sai Teja
 
-Building practical AI-powered applications with large language models, persistent memory, Python, and modern web technologies.
+**AI/ML engineer building practical LLM applications, secure backends, and
+well-tested Python tools.**
 
-I'm an Artificial Intelligence and Machine Learning undergraduate based in Telangana, India, interested in turning AI capabilities into reliable, real-world software.
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
 
-My focus areas include Generative AI, LLM engineering, Python backend development, full-stack applications, and cybersecurity.
+I am an Artificial Intelligence and Machine Learning undergraduate in Telangana,
+India. I like turning model capabilities into software that is understandable,
+tested, and safe to operate: local LLM applications, retrieval and memory
+systems, Python services, and security tooling.
 
-🤖 AI & LLMs: Ollama, Qwen3 8B, Hindsight
-⚙️ Backend: Python, FastAPI, REST APIs, SQLite, SQLAlchemy
-🌐 Frontend: React, Vite
-🧪 Engineering: Pytest, Docker, GitHub Actions, Ruff, Mypy
-🔐 Security: Linux, OSINT, network inspection, vulnerability assessment
-🛠️ Technical Skills
+## What I'm focused on
 
-Languages
+- **LLM engineering** — Ollama and Qwen3, durable conversational memory,
+  prompt design, and evaluation harnesses that measure extraction quality.
+- **Backend engineering** — FastAPI, SQLAlchemy, SQLite/PostgreSQL, typed
+  Python, and containerised deployments.
+- **Security engineering** — network anomaly detection, packet analysis,
+  secure-code review, and static analysis with Bandit and Semgrep.
+- **Engineering quality** — tests with measured coverage, Ruff, Mypy, Bandit,
+  and GitHub Actions on every push.
 
-!Python !Java !C !SQL
+## Featured projects
 
-AI & Generative AI
+| Project | Description | Verification |
+| --- | --- | --- |
+| [**AI Customer Support Agent**](https://github.com/charansaiteja-cloud/AI-AGENT) | Full-stack support agent with Qwen3 via Ollama, per-customer long-term memory in Hindsight, optional API-key auth, attachments, and a React UI. | 121 backend + 17 frontend tests · 85.2% backend coverage · Ruff, Mypy, CI |
+| [**SentinelNet**](https://github.com/charansaiteja-cloud/SentinelNet) | ML-assisted network anomaly detector. Learns a baseline with Isolation Forest, scores live or replayed traffic, applies risky-port rules, and emits JSONL alerts with cooldown. | 48 tests · 91% branch coverage · Ruff, Mypy, Bandit · Docker image |
+| [**Secure Code Review**](https://github.com/charansaiteja-cloud/CodeAlpha_SecureCodeReview) | FastAPI reference service that orchestrates Bandit and Semgrep, normalises findings, and demonstrates defensive middleware and parameterised SQL. | 74 tests · 82.8% branch coverage · Ruff and Bandit clean · Python 3.11/3.12 CI |
+| [**Basic Network Sniffer**](https://github.com/charansaiteja-cloud/CodeAlpha_BasicNetworkSniffer) | Metadata-first Scapy sniffer with protocol decoding, CSV export, BPF filtering, and a bounded ICMP preview. | 18 tests · Ruff clean · Python 3.9–3.12 CI |
+| [**Phishing Awareness Training**](https://github.com/charansaiteja-cloud/CodeAlpha_PhishingAwarenessTraining) | Streamlit training module with annotated phishing examples, an interactive quiz, scoring, and a completion flow. | 16 tests · 98.9% branch coverage · Ruff clean |
+| [**CodeAlpha Project Bundle**](https://github.com/charansaiteja-cloud/codealpha_tasks) | The three CodeAlpha tasks in one reviewable monorepo, with a root CI workflow that runs all 108 tests. | 108 tests across three suites · root CI |
 
-!Ollama !Generative AI !LLM Applications
+### SentinelNet at a glance
 
-LLM integration and application development
-Local inference using Ollama and Qwen3 8B
-Persistent conversational memory with Hindsight
-Prompt engineering and context-aware AI workflows
-AI agent concepts and LLM application architecture
+```text
+live interface ─┐
+                ├─▶ Scapy capture ─▶ 11-feature packet vector ─▶ baseline
+PCAP replay ────┘                                              │
+                                                               ▼
+                                      Isolation Forest ─▶ explicit threshold
+                                                               │
+                            every later packet ─▶ score / rules ─▶ JSONL alert
+```
 
-Backend, Frontend & Databases
+It is an anomaly detector, not a full IDS: it does not reassemble flows, inspect
+payloads, or block traffic. The README documents those limits alongside the
+risky-port heuristic and baseline assumptions.
 
-!FastAPI !React !Vite !SQLite !SQLAlchemy
+## Technical toolkit
 
-REST API design and integration
-Database persistence and ORM-based data access
-Frontend and backend integration
-Request validation and error handling
+| Area | Tools |
+| --- | --- |
+| Languages | Python, Java, C, SQL |
+| AI / LLMs | Ollama, Qwen3, Hindsight, prompt engineering, local inference |
+| Backend | FastAPI, SQLAlchemy, Pydantic, REST APIs, SQLite |
+| Frontend | React, Vite, JavaScript, CSS |
+| Quality | Pytest, pytest-cov, Ruff, Mypy, Bandit, pip-audit |
+| Delivery | Docker, Docker Compose, GitHub Actions, Git |
+| Security | Linux, Wireshark, Nmap, Burp Suite, Semgrep, OSINT |
 
-Development & Quality Engineering
+## Education
 
-!Git !Docker !Pytest !GitHub Actions
+**B.Tech. in Artificial Intelligence and Machine Learning**<br>
+Sri Indu College of Engineering & Technology, Hyderabad, Telangana
 
-Ruff · Mypy · Automated testing · Continuous integration · Containerization
+Coursework and interests include machine learning, data structures, database
+management systems, operating systems, computer networks, and software
+engineering.
 
-Cybersecurity
+## Certifications and professional development
 
-Linux · Kali Linux · OSINT · Nmap · Wireshark · Burp Suite · Metasploit
+- Microsoft — Unlocking AI for Everyone
+- Tata / Forage — GenAI Powered Data Analytics Job Simulation
+- Tata / Forage — Cybersecurity Analyst Job Simulation
+- Infosys Springboard — Introduction to Cyber Security
+- Infosys Springboard — Prompt Engineering
 
-Areas of interest include network security, security testing, vulnerability assessment, and secure application development.
+## Connect
 
-🚀 Featured Projects
-1. AI Customer Support Agent with Long-Term Memory
+- **GitHub:** [@charansaiteja-cloud](https://github.com/charansaiteja-cloud)
+- **LinkedIn:** Bejjam Charan Sai Teja
+- **Email:** [25d41a6633@sriindu.ac.in](mailto:25d41a6633@sriindu.ac.in)
 
-A full-stack AI customer support application designed to maintain conversational continuity through locally hosted language models and persistent memory.
-
-Technology stack
-
-Python FastAPI React Vite Ollama Qwen3 8B Hindsight SQLite SQLAlchemy Pytest
-
-Key features
-
-🧠 Persistent memory: Integrates Hindsight to retain and retrieve relevant information from previous interactions.
-💬 Context-aware responses: Uses relevant conversational history to inform responses.
-🤖 Local LLM inference: Integrates Qwen3 8B through Ollama.
-🔌 Full-stack integration: Connects the frontend, backend APIs, model inference, and data storage.
-📎 Attachment processing: Supports attachment parsing and database persistence.
-🧪 Testing and error handling: Includes frontend error-handling mechanisms and backend tests.
-
-Engineering focus: LLM integration, memory retrieval, API architecture, data persistence, and full-stack development.
-
-Project link: Add the URL of your public AI Customer Support Agent repository here.
-2. SentinelNet — Network Security Inspection Framework
-
-A Python-based framework for network security inspection and target analysis, emphasizing asynchronous processing, structured validation, and software quality.
-
-Technology stack
-
-Python AsyncIO Pydantic Docker Pytest Ruff Mypy GitHub Actions
-
-Key features
-
-⚡ Asynchronous processing with Python AsyncIO
-✅ Structured input validation using Pydantic
-🐳 Containerized workflows using Docker
-🧪 Automated testing with Pytest
-🔍 Linting and static type checking
-⚙️ Continuous integration and code-quality automation
-
-Engineering focus: Python engineering, asynchronous processing, validation, testing, and maintainable software architecture.
-
-🎓 Education
-
-B.Tech. in Artificial Intelligence and Machine Learning
-
-Sri Indu College of Engineering & Technology
-Hyderabad, Telangana, India
-
-Academic interests include machine learning, data structures, database management systems, operating systems, computer networks, and software engineering.
-
-📜 Certifications & Professional Development
-Microsoft — Unlocking AI for Everyone
-Tata / Forage — GenAI Powered Data Analytics Job Simulation
-Tata / Forage — Cybersecurity Analyst Job Simulation
-Infosys Springboard — Introduction to Cyber Security
-Infosys Springboard — Prompt Engineering
-🎯 Professional Interests
-
-Generative AI · LLM Engineering · AI Agents · Agentic AI · Python Development · Full-Stack Engineering · Cybersecurity
-
-🤝 Connect With Me
-GitHub: charansaiteja-cloud
-LinkedIn: Bejjam Charan Sai Teja
-Email: 25d41a6633@sriindu.ac.in
-💡 Professional Goal
-
-I aim to build useful AI-powered software that combines intelligent language models, contextual memory, reliable backend infrastructure, and intuitive user experiences.
-
-I'm continuously developing my skills in AI engineering, Generative AI, LLM applications, and full-stack software development, with an emphasis on maintainable code, testing, and responsible engineering.
-
-Explore my repositories to follow my projects, review implementations, and learn about the technologies I work with.
+I am open to AI engineering, LLM application, backend, and security engineering
+opportunities where careful implementation and measurable quality matter.
