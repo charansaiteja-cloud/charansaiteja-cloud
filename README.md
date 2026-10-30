@@ -1,57 +1,101 @@
+<div align="center">
+
 # Bejjam Charan Sai Teja
 
-**AI/ML engineer building practical LLM applications, secure backends, and
-well-tested Python tools.**
+**I build LLM applications with durable memory, Python services with tested
+edges, and security tools that document their limits.**
 
-[![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](https://react.dev/)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bejjam-charan-sai-teja-/)
+[![Email](https://img.shields.io/badge/Email-25d41a6633@sriindu.ac.in-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:25d41a6633@sriindu.ac.in)
+[![GitHub](https://img.shields.io/badge/GitHub-charansaiteja--cloud-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/charansaiteja-cloud)
 
-I am an Artificial Intelligence and Machine Learning undergraduate in Telangana,
-India. I like turning model capabilities into software that is understandable,
-tested, and safe to operate: local LLM applications, retrieval and memory
-systems, Python services, and security tooling.
+AI/ML undergraduate · Hyderabad, India · open to AI, backend, and security engineering roles
+
+</div>
+
+---
+
+I'm an AI/ML undergraduate, and my favourite part of a project is the part after
+the demo works: scoping memory so one customer can never recall another's data,
+adding the coverage gate that fails the build, writing down what the tool does
+*not* do.
+
+That bias runs through most of what I build — local LLM applications on Ollama
+and Qwen3, FastAPI backends with typed boundaries, and network tooling measured
+by tests rather than screenshots.
 
 ## What I'm focused on
 
-- **LLM engineering** — Ollama and Qwen3, durable conversational memory,
-  prompt design, and evaluation harnesses that measure extraction quality.
-- **Backend engineering** — FastAPI, SQLAlchemy, SQLite/PostgreSQL, typed
-  Python, and containerised deployments.
-- **Security engineering** — network anomaly detection, packet analysis,
-  secure-code review, and static analysis with Bandit and Semgrep.
-- **Engineering quality** — tests with measured coverage, Ruff, Mypy, Bandit,
-  and GitHub Actions on every push.
+- **LLM engineering** — local inference, fact extraction, per-customer memory
+  isolation, and evaluation harnesses that check extraction quality instead of
+  vibes.
+- **Backend engineering** — FastAPI, SQLAlchemy, Pydantic, SQLite/PostgreSQL,
+  typed Python, and containerised deployments.
+- **Security engineering** — packet analysis, anomaly detection, static analysis
+  with Bandit and Semgrep, and secure-code review.
 
-## Featured projects
+## Selected work
 
-| Project | Description | Verification |
-| --- | --- | --- |
-| [**AI Customer Support Agent**](https://github.com/charansaiteja-cloud/AI-AGENT) | Full-stack support agent with Qwen3 via Ollama, per-customer long-term memory in Hindsight, optional API-key auth, attachments, and a React UI. | 121 backend + 17 frontend tests · 84.9% backend coverage · Ruff, Mypy, CI |
-| [**SentinelNet**](https://github.com/charansaiteja-cloud/SentinelNet) | ML-assisted network anomaly detector. Learns a baseline with Isolation Forest, scores live or replayed traffic, applies risky-port rules, and emits JSONL alerts with cooldown. | 48 tests · 91% branch coverage · Ruff, Mypy, Bandit · Docker image |
-| [**Secure Code Review**](https://github.com/charansaiteja-cloud/CodeAlpha_SecureCodeReview) | FastAPI reference service that orchestrates Bandit and Semgrep, normalises findings, and demonstrates defensive middleware and parameterised SQL. | 74 tests · 82.8% branch coverage · Ruff and Bandit clean · Python 3.11/3.12 CI |
-| [**Basic Network Sniffer**](https://github.com/charansaiteja-cloud/CodeAlpha_BasicNetworkSniffer) | Metadata-first Scapy sniffer with protocol decoding, CSV export, BPF filtering, and a bounded ICMP preview. | 18 tests · Ruff clean · Python 3.9–3.12 CI |
-| [**Phishing Awareness Training**](https://github.com/charansaiteja-cloud/CodeAlpha_PhishingAwarenessTraining) | Streamlit training module with annotated phishing examples, an interactive quiz, scoring, and a completion flow. | 16 tests · 98.9% branch coverage · Ruff clean |
-| [**CodeAlpha Project Bundle**](https://github.com/charansaiteja-cloud/codealpha_tasks) | The three CodeAlpha tasks in one reviewable monorepo, with a root CI workflow that runs all 108 tests. | 108 tests across three suites · root CI |
+### [Support AI](https://github.com/charansaiteja-cloud/AI-AGENT) · a support agent that remembers the customer
 
-### SentinelNet at a glance
+`Python` `FastAPI` `React` `Ollama` `Qwen3` `Hindsight` `SQLite`
+
+A full-stack support console where a customer explains their setup once and a new
+conversation later still knows their device, preferences, and recurring issue.
+Qwen3 extracts durable facts, Hindsight stores them in a bank scoped to that
+customer, and SQLite stays the source of truth for application data.
+
+The constraint that made it interesting was isolation: memory is keyed per
+customer so recall cannot leak across accounts, and deleting a customer deletes
+their memory bank. The UI exposes what was recalled, which model answered, and
+how long it took.
 
 ```text
-live interface ─┐
-                ├─▶ Scapy capture ─▶ 11-feature packet vector ─▶ baseline
-PCAP replay ────┘                                              │
-                                                               ▼
-                                      Isolation Forest ─▶ explicit threshold
-                                                               │
-                            every later packet ─▶ score / rules ─▶ JSONL alert
+React console ──▶ FastAPI ──┬──▶ SQLite            app state
+                            ├──▶ Ollama qwen3:8b   generation
+                            └──▶ Hindsight         one bank per customer
 ```
 
-It is an anomaly detector, not a full IDS: it does not reassemble flows, inspect
-payloads, or block traffic. The README documents those limits alongside the
-risky-port heuristic and baseline assumptions.
+**91 backend tests · 92.1% backend branch coverage · Ruff · CI for backend and frontend**
 
-## Technical toolkit
+[Code](https://github.com/charansaiteja-cloud/AI-AGENT) ·
+[How the memory works](https://github.com/charansaiteja-cloud/AI-AGENT/blob/main/article.md)
+
+### [Secure Code Review](https://github.com/charansaiteja-cloud/CodeAlpha_SecureCodeReview) · static analysis you can audit
+
+`Python` `FastAPI` `Bandit` `Semgrep` `SQLite`
+
+A reference service that runs Bandit and Semgrep, normalises both tools into one
+finding schema, and then demonstrates the fixes it recommends: parameterised
+SQL, defensive middleware, input limits. CI runs the suite and publishes a
+CycloneDX SBOM alongside the test results.
+
+**65 tests · Bandit and Semgrep integrated · SBOM in CI**
+
+[Code](https://github.com/charansaiteja-cloud/CodeAlpha_SecureCodeReview)
+
+### Smaller builds
+
+- **[Basic Network Sniffer](https://github.com/charansaiteja-cloud/CodeAlpha_BasicNetworkSniffer)** —
+  metadata-first Scapy sniffer with protocol decoding, BPF filters, CSV export,
+  and a bounded ICMP preview. **16 tests.**
+- **[Phishing Awareness Training](https://github.com/charansaiteja-cloud/CodeAlpha_PhishingAwarenessTraining)** —
+  Streamlit training module with annotated examples, a scored quiz, and a
+  completion flow. **16 tests, CI.**
+- **[SentinelNet](https://github.com/charansaiteja-cloud/SentinelNet)** — a small
+  NIDS *simulation* I built to understand the capture → threshold → alert loop.
+  Deliberately a simulation: no live capture, flow reassembly, or blocking.
+- **[CodeAlpha bundle](https://github.com/charansaiteja-cloud/codealpha_tasks)** —
+  the three internship tasks in one reviewable monorepo.
+
+## How I work
+
+- **Measure the claim.** Test counts and coverage come from runs, not memory.
+- **Type the edges.** Pydantic at the boundary, explicit schemas between layers.
+- **Write the limits down.** A README that hides what a tool cannot do is a bug.
+- **Keep it runnable.** Docker Compose or one command; no undocumented setup.
+
+## Toolbox
 
 | Area | Tools |
 | --- | --- |
@@ -68,23 +112,24 @@ risky-port heuristic and baseline assumptions.
 **B.Tech. in Artificial Intelligence and Machine Learning**<br>
 Sri Indu College of Engineering & Technology, Hyderabad, Telangana
 
-Coursework and interests include machine learning, data structures, database
-management systems, operating systems, computer networks, and software
-engineering.
+Coursework: machine learning, data structures, database management systems,
+operating systems, computer networks, and software engineering.
 
-## Certifications and professional development
+## Certifications
 
-- Microsoft — Unlocking AI for Everyone
-- Tata / Forage — GenAI Powered Data Analytics Job Simulation
-- Tata / Forage — Cybersecurity Analyst Job Simulation
-- Infosys Springboard — Introduction to Cyber Security
-- Infosys Springboard — Prompt Engineering
+- **Microsoft** — Unlocking AI for Everyone
+- **Tata / Forage** — GenAI Powered Data Analytics Job Simulation
+- **Tata / Forage** — Cybersecurity Analyst Job Simulation
+- **Infosys Springboard** — Introduction to Cyber Security
+- **Infosys Springboard** — Prompt Engineering
 
 ## Connect
 
+- **Email:** [25d41a6633@sriindu.ac.in](mailto:25d41a6633@sriindu.ac.in) — fastest way to reach me
+- **LinkedIn:** [Bejjam Charan Sai Teja](https://www.linkedin.com/in/bejjam-charan-sai-teja-/)
 - **GitHub:** [@charansaiteja-cloud](https://github.com/charansaiteja-cloud)
-- **LinkedIn:** Bejjam Charan Sai Teja
-- **Email:** [25d41a6633@sriindu.ac.in](mailto:25d41a6633@sriindu.ac.in)
 
-I am open to AI engineering, LLM application, backend, and security engineering
+I'm open to AI engineering, LLM application, backend, and security engineering
 opportunities where careful implementation and measurable quality matter.
+
+<sub>Metrics above are from the repositories' test runs, October 2026.</sub>
