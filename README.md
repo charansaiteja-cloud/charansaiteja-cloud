@@ -2,136 +2,107 @@
 
 # Bejjam Charan Sai Teja
 
-**I build LLM applications with durable memory, Python services with tested
-edges, and security tools that document their limits.**
+**AI/ML Engineer building LLM applications with durable memory, tested Python backends, and security tools that document their limits.**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bejjam-charan-sai-teja-/)
-[![Email](https://img.shields.io/badge/Email-25d41a6633@sriindu.ac.in-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:25d41a6633@sriindu.ac.in)
-[![GitHub](https://img.shields.io/badge/GitHub-charansaiteja--cloud-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/charansaiteja-cloud)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bejjam-charan-sai-teja-)
 [![CIKSHA](https://img.shields.io/badge/CIKSHA-charansaiteja-111827?style=flat-square&logo=link&logoColor=white)](https://ciksha.com/@charansaiteja)
+[![GitHub](https://img.shields.io/badge/GitHub-charansaiteja--cloud-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/charansaiteja-cloud)
+[![Email](https://img.shields.io/badge/Email-25d41a6633%40sriindu.ac.in-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:25d41a6633@sriindu.ac.in)
 
-AI/ML undergraduate · Hyderabad, India · open to AI, backend, and security engineering roles
+Hyderabad, India · B.Tech. AI/ML Undergraduate · **Open to AI Engineering, LLM Application, Backend, and Security Engineering roles**
 
 </div>
 
 ---
 
-I'm an AI/ML undergraduate, and my favourite part of a project is the part after
-the demo works: scoping memory so one customer can never recall another's data,
-adding the coverage gate that fails the build, writing down what the tool does
-*not* do.
+## At a glance
 
-That bias runs through most of what I build — local LLM applications on Ollama
-and Qwen3, FastAPI backends with typed boundaries, and network tooling measured
-by tests rather than screenshots.
-
-## What I'm focused on
-
-- **LLM engineering** — local inference, fact extraction, per-customer memory
-  isolation, and evaluation harnesses that check extraction quality instead of
-  vibes.
-- **Backend engineering** — FastAPI, SQLAlchemy, Pydantic, SQLite/PostgreSQL,
-  typed Python, and containerised deployments.
-- **Security engineering** — packet analysis, anomaly detection, static analysis
-  with Bandit and Semgrep, and secure-code review.
+- I build **memory-aware LLM systems**, **FastAPI/Python services with typed boundaries**, and **practical security tooling**.
+- I optimize for what happens *after* the demo: **isolation**, **measurable tests/coverage**, **reproducible setup**, and **documented limitations**.
+- **Fastest way to reach me:** [25d41a6633@sriindu.ac.in](mailto:25d41a6633@sriindu.ac.in) · [LinkedIn](https://www.linkedin.com/in/bejjam-charan-sai-teja-) · [CIKSHA](https://ciksha.com/@charansaiteja)
 
 ## Selected work
 
-### [Support AI](https://github.com/charansaiteja-cloud/AI-AGENT) · a support agent that remembers the customer
+### [Support AI](https://github.com/charansaiteja-cloud/AI-AGENT) — memory-aware customer support agent
+`Python` `FastAPI` `React` `Vite` `Ollama` `Qwen3` `Hindsight` `SQLite` `Docker Compose`
 
-`Python` `FastAPI` `React` `Ollama` `Qwen3` `Hindsight` `SQLite`
+A full-stack support console where a customer can explain context once and return later with relevant recall. Qwen3 extracts durable facts; Hindsight stores them in a **dedicated bank per customer**; SQLite holds application state.
 
-A full-stack support console where a customer explains their setup once and a new
-conversation later still knows their device, preferences, and recurring issue.
-Qwen3 extracts durable facts, Hindsight stores them in a bank scoped to that
-customer, and SQLite stays the source of truth for application data.
+<p align="center">
+  <a href="https://github.com/charansaiteja-cloud/AI-AGENT">
+    <img src="https://raw.githubusercontent.com/charansaiteja-cloud/AI-AGENT/main/docs/demo/demo.gif" alt="Support AI demo" width="860" />
+  </a>
+</p>
 
-The constraint that made it interesting was isolation: memory is keyed per
-customer so recall cannot leak across accounts, and deleting a customer deletes
-their memory bank. The UI exposes what was recalled, which model answered, and
-how long it took.
+- **Core constraint:** per-customer memory isolation (no cross-customer recall); deleting a customer deletes that memory bank.
+- **Engineering details:** typed FastAPI boundaries, background/overlapped work for responsiveness, memory inspector/latency/model visibility, attachment handling (text/Markdown/CSV/JSON/PDF as implemented).
+- **Quality (verified from repository README):** 121 backend tests, 84.9% backend branch coverage (83% gate), 17 frontend tests, Ruff, backend/frontend CI.
+- **Links:** [Code](https://github.com/charansaiteja-cloud/AI-AGENT) · [Architecture write-up](https://github.com/charansaiteja-cloud/AI-AGENT/blob/main/article.md) · [Demo video](https://github.com/charansaiteja-cloud/AI-AGENT/blob/main/docs/demo/demo.mp4)
 
 ```text
-React console ──▶ FastAPI ──┬──▶ SQLite            app state
-                            ├──▶ Ollama qwen3:8b   generation
-                            └──▶ Hindsight         one bank per customer
+React console ──▶ FastAPI ──┬── SQLite            app state
+                            ├── Ollama / Qwen3    generation & extraction
+                            └── Hindsight         one bank per customer
 ```
 
-**91 backend tests · 92.1% backend branch coverage · Ruff · CI for backend and frontend**
+### [Secure Code Review](https://github.com/charansaiteja-cloud/CodeAlpha_SecureCodeReview) — auditable static analysis lab/service
+`Python` `FastAPI` `SQLite` `Bandit` `Semgrep` `CycloneDX` `Docker Compose`
 
-[Code](https://github.com/charansaiteja-cloud/AI-AGENT) ·
-[How the memory works](https://github.com/charansaiteja-cloud/AI-AGENT/blob/main/article.md)
+Combines Bandit and Semgrep into a normalized finding workflow with secure patterns, scan containment, and clear remediation-oriented reporting.
 
-### [Secure Code Review](https://github.com/charansaiteja-cloud/CodeAlpha_SecureCodeReview) · static analysis you can audit
+- **Security focus:** parameterized SQL patterns, defensive middleware, input validation/limits, fail-closed API-key behavior where misconfigured, contained scan targets.
+- **Quality (verified from repository README/docs):** 74 tests, 82.8% branch coverage (recorded 2026-10-27), Bandit + Semgrep integrated, CycloneDX SBOM in CI.
+- **Links:** [Code](https://github.com/charansaiteja-cloud/CodeAlpha_SecureCodeReview) · [Security policy](https://github.com/charansaiteja-cloud/CodeAlpha_SecureCodeReview/blob/main/docs/security-policy.md)
 
-`Python` `FastAPI` `Bandit` `Semgrep` `SQLite`
+### [SentinelNet](https://github.com/charansaiteja-cloud/SentinelNet) — ML-assisted network anomaly detection
+`Python` `Scapy` `scikit-learn (Isolation Forest)` `JSONL alerts` `Docker Compose`
 
-A reference service that runs Bandit and Semgrep, normalises both tools into one
-finding schema, and then demonstrates the fixes it recommends: parameterised
-SQL, defensive middleware, input limits. CI runs the suite and publishes a
-CycloneDX SBOM alongside the test results.
+Baseline-driven anomaly detection with live capture and PCAP replay (no root required for replay), structured alerts, and privacy-conscious handling (no payload storage).
 
-**65 tests · Bandit and Semgrep integrated · SBOM in CI**
+- **Quality (verified from repository README):** 48 tests, ~91% coverage, Ruff/Mypy/Bandit/pip-audit documented.
+- **Limitations (documented):** anomaly detector, not a full IDS/IPS — no flow reassembly, payload inspection, or traffic blocking.
+- **Link:** [Code](https://github.com/charansaiteja-cloud/SentinelNet)
 
-[Code](https://github.com/charansaiteja-cloud/CodeAlpha_SecureCodeReview)
+## Additional projects
 
-### Smaller builds
-
-- **[Basic Network Sniffer](https://github.com/charansaiteja-cloud/CodeAlpha_BasicNetworkSniffer)** —
-  metadata-first Scapy sniffer with protocol decoding, BPF filters, CSV export,
-  and a bounded ICMP preview. **16 tests.**
-- **[Phishing Awareness Training](https://github.com/charansaiteja-cloud/CodeAlpha_PhishingAwarenessTraining)** —
-  Streamlit training module with annotated examples, a scored quiz, and a
-  completion flow. **16 tests, CI.**
-- **[SentinelNet](https://github.com/charansaiteja-cloud/SentinelNet)** — a small
-  NIDS *simulation* I built to understand the capture → threshold → alert loop.
-  Deliberately a simulation: no live capture, flow reassembly, or blocking.
-- **[CodeAlpha bundle](https://github.com/charansaiteja-cloud/codealpha_tasks)** —
-  the three internship tasks in one reviewable monorepo.
+| Project | What it demonstrates | Stack |
+| --- | --- | --- |
+| [Basic Network Sniffer](https://github.com/charansaiteja-cloud/CodeAlpha_BasicNetworkSniffer) | Metadata-first packet decoding (IPv4/IPv6/ARP/TCP/UDP/ICMP/DNS), BPF filtering, bounded previews, streaming capture (`store=False`) | Python · Scapy · pytest |
+| [Phishing Awareness Training](https://github.com/charansaiteja-cloud/CodeAlpha_PhishingAwarenessTraining) | Annotated examples, scored quiz, completion/certificate flow with tests and CI | Python · Streamlit · pytest |
+| [CodeAlpha Tasks](https://github.com/charansaiteja-cloud/codealpha_tasks) | Monorepo bundling internship/security tasks with per-task tests/workflows | Python · Security tooling |
 
 ## How I work
 
-- **Measure the claim.** Test counts and coverage come from runs, not memory.
-- **Type the edges.** Pydantic at the boundary, explicit schemas between layers.
-- **Write the limits down.** A README that hides what a tool cannot do is a bug.
-- **Keep it runnable.** Docker Compose or one command; no undocumented setup.
+- **Measure the claim.** Tests, coverage, and CI over screenshots.
+- **Type the boundaries.** Validate inputs and keep contracts explicit (Pydantic/schemas).
+- **Design for isolation.** Separate tenant/customer context and make deletion explicit.
+- **Document limitations.** State what a system does *and* what it does not do.
+- **Keep it runnable.** Reproducible setup (Docker/Compose) and automated checks.
 
 ## Toolbox
 
-| Area | Tools |
+| Area | Technologies |
 | --- | --- |
 | Languages | Python, Java, C, SQL |
-| AI / LLMs | Ollama, Qwen3, Hindsight, prompt engineering, local inference |
-| Backend | FastAPI, SQLAlchemy, Pydantic, REST APIs, SQLite |
+| AI / LLM | Ollama, Qwen3, Hindsight, prompt/fact extraction, local inference, evaluation-minded workflows |
+| Backend | FastAPI, SQLAlchemy, Pydantic, REST APIs, typed Python |
 | Frontend | React, Vite, JavaScript, CSS |
-| Quality | Pytest, pytest-cov, Ruff, Mypy, Bandit, pip-audit |
-| Delivery | Docker, Docker Compose, GitHub Actions, Git |
-| Security | Linux, Wireshark, Nmap, Burp Suite, Semgrep, OSINT |
+| Data | SQLite, PostgreSQL-oriented design |
+| Quality & Security | pytest, pytest-cov, Ruff, Mypy, Bandit, Semgrep, pip-audit |
+| Delivery & Tools | Docker, Docker Compose, GitHub Actions, Git, Linux, Scapy, Wireshark, Nmap, Burp Suite, OSINT |
 
-## Education
+## Education & certifications
 
-**B.Tech. in Artificial Intelligence and Machine Learning**<br>
-Sri Indu College of Engineering & Technology, Hyderabad, Telangana
+**B.Tech. in Artificial Intelligence and Machine Learning** — Sri Indu College of Engineering & Technology, Hyderabad, Telangana, India  
+*Relevant coursework:* Machine Learning, Data Structures, DBMS, Operating Systems, Computer Networks, Software Engineering.
 
-Coursework: machine learning, data structures, database management systems,
-operating systems, computer networks, and software engineering.
-
-## Certifications
-
-- **Microsoft** — Unlocking AI for Everyone
-- **Tata / Forage** — GenAI Powered Data Analytics Job Simulation
-- **Tata / Forage** — Cybersecurity Analyst Job Simulation
-- **Infosys Springboard** — Introduction to Cyber Security
-- **Infosys Springboard** — Prompt Engineering
+**Certifications:** Microsoft — *Unlocking AI for Everyone*; Tata/Forage — *GenAI Powered Data Analytics Job Simulation*, *Cybersecurity Analyst Job Simulation*; Infosys Springboard — *Introduction to Cyber Security*, *Prompt Engineering*.
 
 ## Connect
 
-- **Email:** [25d41a6633@sriindu.ac.in](mailto:25d41a6633@sriindu.ac.in) — fastest way to reach me
-- **LinkedIn:** [Bejjam Charan Sai Teja](https://www.linkedin.com/in/bejjam-charan-sai-teja-/)
-- **GitHub:** [@charansaiteja-cloud](https://github.com/charansaiteja-cloud)
+- **Email:** [25d41a6633@sriindu.ac.in](mailto:25d41a6633@sriindu.ac.in) *(fastest)*
+- **LinkedIn:** [Bejjam Charan Sai Teja](https://www.linkedin.com/in/bejjam-charan-sai-teja-)
 - **CIKSHA:** [@charansaiteja](https://ciksha.com/@charansaiteja)
+- **GitHub:** [@charansaiteja-cloud](https://github.com/charansaiteja-cloud)
 
-I'm open to AI engineering, LLM application, backend, and security engineering
-opportunities where careful implementation and measurable quality matter.
-
-<sub>Metrics above are from the repositories' test runs, October 2026.</sub>
+<sub>Project metrics are sourced from the linked repositories’ READMEs/docs. Review each repository for current test runs, CI status, and scope.</sub>
