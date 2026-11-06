@@ -8,6 +8,7 @@ edges, and security tools that document their limits.**
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bejjam-charan-sai-teja-/)
 [![Email](https://img.shields.io/badge/Email-25d41a6633@sriindu.ac.in-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:25d41a6633@sriindu.ac.in)
 [![GitHub](https://img.shields.io/badge/GitHub-charansaiteja--cloud-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/charansaiteja-cloud)
+[![CIKSHA](https://img.shields.io/badge/CIKSHA-charansaiteja-111827?style=flat-square&logo=link&logoColor=white)](https://ciksha.com/@charansaiteja)
 
 AI/ML undergraduate · Hyderabad, India · open to AI, backend, and security engineering roles
 
@@ -128,6 +129,7 @@ operating systems, computer networks, and software engineering.
 - **Email:** [25d41a6633@sriindu.ac.in](mailto:25d41a6633@sriindu.ac.in) — fastest way to reach me
 - **LinkedIn:** [Bejjam Charan Sai Teja](https://www.linkedin.com/in/bejjam-charan-sai-teja-/)
 - **GitHub:** [@charansaiteja-cloud](https://github.com/charansaiteja-cloud)
+- **CIKSHA:** [@charansaiteja](https://ciksha.com/@charansaiteja)
 
 I'm open to AI engineering, LLM application, backend, and security engineering
 opportunities where careful implementation and measurable quality matter.
